@@ -1,0 +1,14 @@
+.header {
+    height: 50px;
+    background-color: #04141E;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    color:white;
+    padding: 10px 30px;
+    justify-content: center;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+}
