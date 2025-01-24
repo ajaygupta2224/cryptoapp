@@ -1,0 +1,61 @@
+.info {
+    margin-top: 50px;
+
+    .info-header {
+        padding: 30px 30px 20px;
+        height: auto;
+        border-bottom: 1px #e5e7ef solid;
+
+        .rotate-ico {
+            transform: rotate(180deg);
+        }
+
+        .people {
+            font-weight: 700;
+            color: #5f6469;
+            text-decoration: none;
+            background: #e2e7ed;
+            padding: 4px 7px;
+            border-radius: 2px;
+            border: 1px solid #e2e7ed;
+        }
+
+        .founder {
+            padding: 4px 7px;
+            color: #928fa0;
+            background: #fafafb;
+            border: 1px #b5b1c5 solid;
+            border-radius: 2px;
+        }
+
+        .ico-person {
+            border-radius: 250px;
+            box-shadow: 10px 10px 25px 0 rgb(0 0 0 / 5%);
+        }
+    }
+
+    .desc {
+        padding: 30px;
+
+        .desc-info-header {
+            font-size: 11px;
+            color: #000;
+            background: #ededf2;
+            padding: 8px;
+            font-weight: 700;
+            letter-spacing: .5px;
+        }
+
+        .desc-info {
+            margin-top: 12px;
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #383838;
+        }
+        .desc-header{
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+}

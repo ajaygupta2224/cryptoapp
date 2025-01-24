@@ -1,183 +1,326 @@
 import React from 'react'
-import "./dashboard.css"
+import "./dashboard.scss"
 
 export default function dashboard() {
     return (
         <div className='dashboard flex flex-col'>
-            <div className='people-row flex flex-col gap-4'>
-                <div className='flex'>
-                    <div className='people'>People</div>
-                </div>
-                <div className='flex flex-wrap gap-4'>
-                    <div className='people-category'>Trending</div>
-                    <div className='people-category'>Latest</div>
-                    <div className='people-category'>Founders</div>
-                    <div className='people-category'>Investors</div>
-                    <div className='people-category'>Politicians</div>
-                    <div className='people-category'>Influencers</div>
-                    <div className='people-category'>Bitcoin Maxis</div>
-                    <div className='people-category'>Etherium Eco</div>
-                </div>
-                <div className='flex flex-wrap gap-4'>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Ross Ulbricht</div>
-                        <div className='text-sm creator'>Creator at Silk Road</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Ross Ulbricht</div>
-                        <div className='text-sm creator'>Creator at Silk Road</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Ross Ulbricht</div>
-                        <div className='text-sm creator'>Creator at Silk Road</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Ross Ulbricht</div>
-                        <div className='text-sm creator'>Creator at Silk Road</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Ross Ulbricht</div>
-                        <div className='text-sm creator'>Creator at Silk Road</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Ross Ulbricht</div>
-                        <div className='text-sm creator'>Creator at Silk Road</div>
-                    </div>
-                    </div>
+            <div className='title flex flex-col'>
+                <span className='font-bold text-2xl'>Directory</span>
+                <span className='mt-2 explore'>Explore hundreds of companies, products and people working at the forefront of crypto and web3.</span>
+                <div className='flex items-center mt-4'>
+                    <input type="text" placeholder='search...' className="search-container" name="search" />
+                    <span className='submit flex cursor-pointer'>
+                        <img width={30} src="ico-search-grey.svg" alt='person' />
+                    </span>
                 </div>
             </div>
-            <div className='company-row flex flex-col gap-4'>
-                <div className='flex'>
-                    <div className='people'>Companies</div>
+            <div className='trending flex items-center gap-2'>
+                <span className='trending1'>Trending</span>
+                <div className='flex scroll-animation gap-2'>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
+                    <span className='object flex items-center gap-1'>
+                        <img className='logo rounded-xs' width={20} src="ico-person.svg" alt='person' />
+                        <span>Elon Musk</span>
+                    </span>
                 </div>
-                <div className='flex flex-wrap gap-4'>
-                    <div className='people-category'>Trending</div>
-                    <div className='people-category'>Latest</div>
-                    <div className='people-category'>Exchanges</div>
-                    <div className='people-category'>Venture Capital</div>
-                    <div className='people-category'>Development</div>
-                    <div className='people-category'>Research</div>
-                    <div className='people-category'>Media</div>
-                    <div className='people-category'>Marketing</div>
-                    <div className='people-category'>DeFi</div>
-                    <div className='people-category'>Nonprofit</div>
-                </div>
-                <div className='flex flex-wrap gap-4'>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Coinbase</div>
-                        <div className='text-sm creator'>Leading Digital Company</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Coinbase</div>
-                        <div className='text-sm creator'>Leading Digital Company</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Coinbase</div>
-                        <div className='text-sm creator'>Leading Digital Company</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Coinbase</div>
-                        <div className='text-sm creator'>Leading Digital Company</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Coinbase</div>
-                        <div className='text-sm creator'>Leading Digital Company</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Coinbase</div>
-                        <div className='text-sm creator'>Leading Digital Company</div>
-                    </div>
-                    </div>
+
+            </div>
+
+            <div className='people flex flex-col'>
+                <span className='people-header flex items-center'>
+                    <span className='people-div'></span>
+                    <span>People</span>
+                </span>
+                <div className='flex flex-wrap mt-2 gap-2'>
+                    <span className='people-widget flex items-center'>
+                        Trending
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Latest
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Founders
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Investors
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Politicians
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Influencers
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Bitcoin Maxis
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Etherium Eco
+                    </span>
                 </div>
             </div>
-            <div className='company-row flex flex-col gap-4'>
-                <div className='flex'>
-                    <div className='people'>Products</div>
+            <div className='people-grid flex flex-wrap'>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Ross Ulbricht</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>Creator at Silk Road</span>
+                    </span>
                 </div>
-                <div className='flex flex-wrap gap-4'>
-                    <div className='people-category'>Latest</div>
-                    <div className='people-category'>Wallets</div>
-                    <div className='people-category'>Games</div>
-                    <div className='people-category'>Trading Apps</div>
-                    <div className='people-category'>Social Apps</div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Ross Ulbricht</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>Creator at Silk Road</span>
+                    </span>
                 </div>
-                <div className='flex flex-wrap gap-4'>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Polaris</div>
-                        <div className='text-sm creator'>A cross chain DeFi Platform</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Polaris</div>
-                        <div className='text-sm creator'>A cross chain DeFi Platform</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Polaris</div>
-                        <div className='text-sm creator'>A cross chain DeFi Platform</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Polaris</div>
-                        <div className='text-sm creator'>A cross chain DeFi Platform</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Polaris</div>
-                        <div className='text-sm creator'>A cross chain DeFi Platform</div>
-                    </div>
-                    </div>
-                    <div className='persons flex gap-1'>
-                    <img className='' width={50} src="ico-person.svg" alt='menu'/>
-                    <div className='flex flex-col gap-1'>
-                        <div className='font-bold'>Polaris</div>
-                        <div className='text-sm creator'>A cross chain DeFi Platform</div>
-                    </div>
-                    </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Ross Ulbricht</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>Creator at Silk Road</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Ross Ulbricht</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>Creator at Silk Road</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Ross Ulbricht</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>Creator at Silk Road</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Ross Ulbricht</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>Creator at Silk Road</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Ross Ulbricht</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>Creator at Silk Road</span>
+                    </span>
+                </div>
+            </div>
+            <div className='people flex flex-col'>
+                <span className='people-header flex items-center'>
+                    <span className='people-div'></span>
+                    <span>Companies</span>
+                </span>
+                <div className='flex flex-wrap mt-2 gap-2'>
+                    <span className='people-widget flex items-center'>
+                        Trending
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Latest
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Exchanges
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Venture Capital
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Development
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Research
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Media
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        marketing
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        DeFi
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        NonProfit
+                    </span>
+                </div>
+            </div>
+            <div className='people-grid flex flex-wrap'>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Coinbase</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A leading Digital currency company</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Coinbase</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A leading Digital currency company</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Coinbase</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A leading Digital currency company</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Coinbase</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A leading Digital currency company</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Coinbase</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A leading Digital currency company</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Coinbase</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A leading Digital currency company</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Coinbase</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A leading Digital currency company</span>
+                    </span>
+                </div>
+            </div>
+            <div className='people flex flex-col'>
+                <span className='people-header flex items-center'>
+                    <span className='people-div'></span>
+                    <span>Products</span>
+                </span>
+                <div className='flex flex-wrap mt-2 gap-2'>
+                    <span className='people-widget flex items-center'>
+                        Latest
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Wallets
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Games
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Trading Apps
+                    </span>
+                    <span className='people-widget flex items-center'>
+                        Social Apps
+                    </span>
+                </div>
+            </div>
+            <div className='people-grid flex flex-wrap'>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Polaris</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A cross-chain DeFi platform</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Polaris</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A cross-chain DeFi platform</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Polaris</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A cross-chain DeFi platform</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Polaris</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A cross-chain DeFi platform</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Polaris</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A cross-chain DeFi platform</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Polaris</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A cross-chain DeFi platform</span>
+                    </span>
+                </div>
+                <div className='people-info flex'>
+                    <img className='logo' width={50} src="ico-person.svg" alt='person' />
+                    <span className='flex flex-col gap-2'>
+                        <span style={{ color: "#0f0f1b" }} className='text-ellipsis text-sm font-bold'>Polaris</span>
+                        <span className='text-xs' style={{ color: "#979aab" }}>A cross-chain DeFi platform</span>
+                    </span>
                 </div>
             </div>
         </div>
